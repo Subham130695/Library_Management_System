@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mycompany</groupId>
+    <artifactId>LibraryManagementSystem</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Absolute Layout (NetBeans GUI) -->
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE250</version>
+        </dependency>
+
+        <!-- MySQL Connector for database connectivity -->
+        <dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.0.33</version>
+</dependency>
+
+        <dependency>
+            <groupId>net.proteanit</groupId>
+            <artifactId>rs2xml</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- JCalendar for date selection -->
+        <dependency>
+    <groupId>com.toedter</groupId>
+    <artifactId>jcalendar</artifactId>
+    <version>1.4</version>
+</dependency>
+
+
+
+
+
+        <!-- GUI Components (if needed for NetBeans Swing) -->
+        <dependency>
+            <groupId>org.swinglabs</groupId>
+            <artifactId>swingx-all</artifactId>
+            <version>1.6.4</version>
+        </dependency>
+        
+        <dependency>
+    <groupId>net.proteanit</groupId>
+    <artifactId>rs2xml</artifactId>
+    <version>1.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.swinglabs</groupId>
+    <artifactId>swingx-all</artifactId>
+    <version>1.6.4</version>
+</dependency>
+
+        
+    
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>8</maven.compiler.release>
+        <exec.mainClass>com.mycompany.librarymanagementsystem.LibraryManagementSystem</exec.mainClass>
+    </properties>
+    <name>LibraryManagementSystem</name>
+</project>
